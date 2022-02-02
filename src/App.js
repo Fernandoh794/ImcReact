@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import './app.css'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div className="app">
+    <h1>Calculadora IMC</h1>
+    <span>Vamos Calcular seu IMC</span>
+    
+    <div className="area-input">
+      <input 
+      type="text"
+      placeholder="Peso em (Kg) Ex: 90"
+      />
+      <input 
+      type="text"
+      placeholder="Altura em (cm) Ex: 180"
+      />
+
+      <button>
+        Calcular
+      </button>
+     
     </div>
+
+    <h2>Seu IMC foi 25, você está abaixo do Peso!</h2>
+
+    
+    </div>
+
+   
   );
 }
 
